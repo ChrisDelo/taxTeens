@@ -43,23 +43,21 @@ def msg_received_from_group():
          send_msg("A 1099 form reports the various types of income you may receive throughout the year other than the information provided by the w-2 form. The person or entity that pays you is responsible for filling out the appropriate 1099 tax form and sending it to you by January 31.") 
      if "earned income credit" in data['text'].lower():
         send_msg("The Federal earned income credit is a refundable tax credit for low- to moderate-income working individuals and couples, particularly those with children.")
-     elif "EIC" in data['text']:
+     elif "eic" in data['text'].lower():
         send_msg("The Federal earned income credit is a refundable tax credit for low- to moderate-income working individuals and couples, particularly those with children.")
-     elif "EITC" in data['text']:
+     elif "eitc" in data['text'].lower():
         send_msg("The Federal earned income credit is a refundable tax credit for low- to moderate-income working individuals and couples, particularly those with children.")
      if "routing transit number" in data['text'].lower():
         send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
-     elif "RTN" in data['text']:
+     elif "rtn" in data['text'].lower():
         send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
      elif "routing number" in data['text'].lower():
         send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
      if "cool dude" in data['text'].lower():
         send_msg("https://www.youtube.com/watch?v=I7Tps0M-l64")
-     if "routing number" in data['text'].lower():
-        send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
      if  "preparer tax identification number" in data['text'].lower():
         send_msg("The Preparer Tax Identification Number (PTIN) is an identification number that all paid tax return preparers must use on U.S. federal tax returns or claims for refund submitted to the Internal Revenue Service (IRS)")
-     elif "PTIN" in data['text']:
+     elif "ptin" in data['text'].lower():
         send_msg("The Preparer Tax Identification Number (PTIN) is an identification number that all paid tax return preparers must use on U.S. federal tax returns or claims for refund submitted to the Internal Revenue Service (IRS)")
      if "file tax" in data['text'].lower():
         send_msg_pic("You are required to file the 1040 tax form if your gross income is more than 12,000. However, if your adjusted gross income is under 66,000 you can file your taxes for free using freefile.", "https://cdn.discordapp.com/attachments/512727198570905604/640420453797593138/unknown.png")
