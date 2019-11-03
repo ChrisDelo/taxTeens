@@ -21,8 +21,6 @@ def msg_received_from_group():
   if data['sender_type'] == 'user':
 #     if data['text'] == "w-2" or "w2" or "w2 forms" or "w-2 forms" or "W2" or "W-2":
 #       send_msg("A form you receive from your employer before the end of January that includes necessary information to file your taxes, such as wages, tips earned, medicare taxes, etc.If you haven’t received your W-2 form from your employer by February 15th, ask your employer to send you your W-2 form, if they refuse, the IRS will then tell the employer to send the W-2 form within 10 days or face penalties. Be sure to provide the IRS an estimate of your income as well as dates worked and rate of pay. The IRS also allows an employee who cannot get the W-2 from his employer to send in the substitute Form 4852")
-     if "help" in data['text'].lower():
-        send_msg("Hi I am the Tax Teen chatbot. I can help you with your student taxes. You can ask me about w2 forms, joint claims, and much more. I would recomend you start with the 1040EZ IRS form. You can download it here: https://www.irs.gov/pub/irs-prior/f1040ez--2017.pdf. Let me know if you have any questions.")
      if "w-2" in data['text']:
         send_msg("A form you receive from your employer before the end of January that includes necessary information to file your taxes, such as wages, tips earned, medicare taxes, etc.If you haven’t received your W-2 form from your employer by February 15th, ask your employer to send you your W-2 form, if they refuse, the IRS will then tell the employer to send the W-2 form within 10 days or face penalties. Be sure to provide the IRS an estimate of your income as well as dates worked and rate of pay. The IRS also allows an employee who cannot get the W-2 from his employer to send in the substitute Form 4852")
      if "w2" in data['text']:
@@ -39,7 +37,14 @@ def msg_received_from_group():
         send_msg("Someone who relies on your income, such as children or relatives.You can NOT file a 1040EZ if you have dependents, must file a different type of tax formYou can claim yourself as a dependent if you meet the qualifications so no one else can claim you as a dependent, which is called a personal exemption.")
      if "Federal income tax withheld" in data['text']:
         send_msg("Found in Box 2 of your W-2 Form, it is a percentage of your income withheld from your employer to pay the government as tax. If too much is withheld, you are entitled to a tax refund, if too little, you will receive a bill or a penalty.To find out an estimate of your federal income tax withheld, use this website provided by the IRS https://apps.irs.gov/app/tax-withholding-estimator.")
-  
+     if "Unemployment compensation" in data['text']:
+        send_msg("Unemployment compensation is paid by the state to unemployed workers who have lost their jobs due to layoffs")
+     if "taxable interest" in data['text']:
+        send_msg("Interest earned either through a savings account, dividends or bonds that are taxable by the IRS.")
+     if "1099" in data ['text']:
+         send_msg("A form that reports the various types of income you may receive throughout the year other than the information provided by the w-2 form. The person or entity that pays you is responsible for filling out the appropriate 1099 tax form and sending it to you by January 31.")
+     if "Earned income credit / EIC / EITC" in data['text']:
+        send_msg("The Federal earned income credit is a refundable tax credit for low- to moderate-income working individuals and couples, particularly those with children.")
   return "ok", 200
 
  
