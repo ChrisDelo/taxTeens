@@ -58,12 +58,8 @@ def msg_received_from_group():
      if "PTIN" in data['text']:
         send_msg("The Preparer Tax Identification Number (PTIN) is an identification number that all paid tax return preparers must use on U.S. federal tax returns or claims for refund submitted to the Internal Revenue Service (IRS)")
      if "help" in data['text'].lower(): 
-        send_msg("Hi I am the Tax Teen chatbot. I can help you with your student taxes. You can ask me about w2 forms, joint claims, and much more. I would recomend you start with the 1040 IRS form. You can download it here: https://www.irs.gov/pub/irs-pdf/f1040.pdf. If you need help calculating your income tax type \"math\". Let me know if you have any questions.")
-     if data['text'].lower == "math":
-        send_msg("Thanks for using the math function of Tax Teen. Tax Teen will need: your total income (you can find this on your w2 form) and your student loan interest. The format for sending this is: \"math: income: <your income>, interest: <your student loan interest> \")
-#      if "math: income:" in data['text'].lower():
-        
-        
+        send_msg("Hi I am the Tax Teen chatbot. I can help you with your student taxes. You can ask me about w2 forms, joint claims, and much more. I would recomend you start with the 1040 IRS form. You can download it here: https://www.irs.gov/pub/irs-pdf/f1040.pdf. If you need help calculating your income tax type\"math\". Let me know if you have any questions.")
+  
   
   
   
