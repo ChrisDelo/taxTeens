@@ -43,11 +43,11 @@ def msg_received_from_group():
         send_msg("Interest earned either through a savings account, dividends or bonds that are taxable by the IRS.")
      if "1099" in data ['text']:
          send_msg("A form that reports the various types of income you may receive throughout the year other than the information provided by the w-2 form. The person or entity that pays you is responsible for filling out the appropriate 1099 tax form and sending it to you by January 31.")
-     if "Earned income credit / EIC / EITC" in data['text']:
+     if "Earned income credit  EIC  EITC" in data['text']:
         send_msg("The Federal earned income credit is a refundable tax credit for low- to moderate-income working individuals and couples, particularly those with children.")
-     if "Routing number / RTN / routing transit number / ABA routing number" in data['text']:
+     if "Routing number  RTN routing transit number  ABA routing number" in data['text']:
         send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
-     if "PTIN / Preparer Tax Identification Number" in data['text']:
+     if "PTIN  Preparer Tax Identification Number" in data['text']:
         send_msg("The Preparer Tax Identification Number (PTIN) is an identification number that all paid tax return preparers must use on U.S. federal tax returns or claims for refund submitted to the Internal Revenue Service (IRS)")
     
   
