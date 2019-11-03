@@ -18,10 +18,11 @@ def msg_received_from_group():
   log('{}'.format(data))
   
   #Check the text of the message sent to the chat to see if it matches our command word
-  if data['text'] == "w-2" or "w2" or "w2 forms" or "w-2 forms" or "W2" or "W-2":
-    send_msg("A form you receive from your employer before the end of January that includes necessary information to file your taxes, such as wages, tips earned, medicare taxes, etc.If you haven’t received your W-2 form from your employer by February 15th, ask your employer to send you your W-2 form, if they refuse, the IRS will then tell the employer to send the W-2 form within 10 days or face penalties. Be sure to provide the IRS an estimate of your income as well as dates worked and rate of pay. The IRS also allows an employee who cannot get the W-2 from his employer to send in the substitute Form 4852")
-  elif data['sender_type'] == 'bot':
-    break
+  if data['sender_type'] == "user"
+    if data['text'] == "w-2" or "w2" or "w2 forms" or "w-2 forms" or "W2" or "W-2":
+      send_msg("A form you receive from your employer before the end of January that includes necessary information to file your taxes, such as wages, tips earned, medicare taxes, etc.If you haven’t received your W-2 form from your employer by February 15th, ask your employer to send you your W-2 form, if they refuse, the IRS will then tell the employer to send the W-2 form within 10 days or face penalties. Be sure to provide the IRS an estimate of your income as well as dates worked and rate of pay. The IRS also allows an employee who cannot get the W-2 from his employer to send in the substitute Form 4852")
+#   elif data['sender_type'] == 'bot':
+#     break
 
   return "ok", 200
 
