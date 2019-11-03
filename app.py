@@ -45,8 +45,8 @@ def msg_received_from_group():
          send_msg("A form that reports the various types of income you may receive throughout the year other than the information provided by the w-2 form. The person or entity that pays you is responsible for filling out the appropriate 1099 tax form and sending it to you by January 31.")
      if "Earned income credit / EIC / EITC" in data['text']:
         send_msg("The Federal earned income credit is a refundable tax credit for low- to moderate-income working individuals and couples, particularly those with children.")
-    if "help" in data['text'].lower(): 
-      send_msg("Hi I am the Tax Teen chatbot. I can help you with your student taxes. You can ask me about w2 forms, joint claims, and much more. I would recomend you start with the 1040EZ IRS form. You can download it here: https://www.irs.gov/pub/irs-prior/f1040ez--2017.pdf. Let me know if you have any questions.")
+     if "help" in data['text'].lower(): 
+        send_msg("Hi I am the Tax Teen chatbot. I can help you with your student taxes. You can ask me about w2 forms, joint claims, and much more. I would recomend you start with the 1040EZ IRS form. You can download it here: https://www.irs.gov/pub/irs-prior/f1040ez--2017.pdf. Let me know if you have any questions.")
   return "ok", 200
 
  
