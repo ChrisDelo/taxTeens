@@ -28,7 +28,7 @@ def msg_received_from_group():
      if "joint return" in data['text'].lower():
         send_msg(" A form that allows married couples to combine their tax liability and report their income, deductions, and credits on the same joint return")
      if "claim" in data['text'].lower():
-        send_msg("To claim someone or something, usually, on the tax return it is referred to claiming someone as a dependantWhen you claim someone as your dependent, it reduces the amount of your income subjected to taxYou can not claim someone as a dependent if someone already has claimed him as a dependent.")
+        send_msg("To claim someone or something, usually, on the tax return it is referred to claiming someone as a dependant. When you claim someone as your dependent, it reduces the amount of your income subjected to taxYou can not claim someone as a dependent if someone already has claimed him as a dependent.")
      if "dependant" in data['text'].lower():
         send_msg("Someone who relies on your income, such as children or relatives. You can claim yourself as a dependent if you meet the qualifications so no one else can claim you as a dependent, which is called a personal exemption.")
      elif "dependent" in data['text'].lower():
@@ -78,13 +78,35 @@ def msg_received_from_group():
      elif "1040sr" in data['text'].lower():
         send_msg("US Tax return for seniors, in many ways similar to the Form 1040-EZ but much more simpler than the Form 1040.")
      elif "1040" in data['text'].lower():
-        send_msg("The IRS Form 1040 is one of the official documents that U.S. taxpayers can use to file their annual income tax return. Depending on the type of income you report, it may be necessary to attach other forms or schedules to it, however, as a student you most likely won't have to worry about that.")
+        send_msg("The IRS Form 1040 is one of the official documents that U.S. taxpayers can use to file their annual income tax return. Depending on the type of income you report, it may be necessary to attach other forms or schedules to it, however, as a student you most likely won't have to worry about that. If you are wondering if you have to attach more documents, check out https://www.irs.gov/forms-pubs/about-form-1040")
      if "irs" in data['text'].lower():
         send_msg("A great video to learn about the IRS: https://www.youtube.com/watch?v=Nn_Zln_4pA8")
      if "internal revenue service" in data['text'].lower():
         send_msg("A great video to learn about the IRS: https://www.youtube.com/watch?v=Nn_Zln_4pA8")
+     if "nontaxable combat pay election" in data['text'].lower():
+        send_msg("Nontaxable combat pay electiona are when those who served in the military and received combat pay (which is nontaxable) may elect to classify their pay as “earned income” for purposes of the EIC.")
+     if "deadline" in data['text'].lower():
+        send_msg("You must file your taxes by April 15th")
+     elif "due date" in data['text'].lower():
+        send_msg("You must file your taxes by April 15th")
+     elif "when" in data['text'].lower():
+        send_msg("You must file your taxes by April 15th")
+     elif "due" in data['text'].lower():
+        send_msg("You must file your taxes by April 15th")
+     if "gross income" in data['text'].lower():
+        send_msg("Gross income is all of the income you received in a year before any tax deductions and other professional expenses have been taken into account, adjusted gross income is gross income minus adjustments to income.")
+     elif "agi" in data['text'].lower():
+        send_msg("Gross income is all of the income you received in a year before any tax deductions and other professional expenses have been taken into account, adjusted gross income is gross income minus adjustments to income.")
+     if "alaska permanent fund" in data['text'].lower():
+        send_msg("The Permanent Fund Dividend [PFD] is a dividend paid to Alaska residents that have lived within the state for a full calendar year (January 1 – December 31), and intend to remain an Alaska resident indefinitely.")
+     elif "permanent fund dividend" in data['text'].lower():
+        send_msg("The Permanent Fund Dividend [PFD] is a dividend paid to Alaska residents that have lived within the state for a full calendar year (January 1 – December 31), and intend to remain an Alaska resident indefinitely.")
+     elif "pfd" in data['text'].lower():
+        send_msg("The Permanent Fund Dividend [PFD] is a dividend paid to Alaska residents that have lived within the state for a full calendar year (January 1 – December 31), and intend to remain an Alaska resident indefinitely.")
+     if "how to file" in data['text'].lower():
+        send_msg("To find out how to file your taxes, go to https://www.irs.gov/filing. You can either send your tax return online or through the mail.")
      if "help" in data['text'].lower(): 
-        send_msg("Hi I am the Tax Teen chatbot. I can help you with your student taxes. You can ask me about w2 forms, joint claims, and much more. I would recomend you start with the 1040 IRS form. You can download it here: https://www.irs.gov/pub/irs-pdf/f1040.pdf. If you need help calculating your income tax type\"math\". Let me know if you have any questions.")
+        send_msg("Hi I am the Tax Teen chatbot. I can help you with your student taxes. You can ask me about w2 forms, joint claims, and much more. I would recomend you start with the 1040 IRS form. You can download it here: https://www.irs.gov/pub/irs-pdf/f1040.pdf. Be sure to check out https://www.irs.gov/individuals/students for any student-specific tax information. If you need help calculating your income tax type\"math\". Let me know if you have any questions.")
  
   
   
