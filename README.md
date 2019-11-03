@@ -9,7 +9,7 @@ You will need GroupMe/Microsoft, Github and Heroku (free) accounts.
 
 Log in to GroupMe and create a new group for the bot to live in. Navigate to https://dev.groupme.com/bots and click "create bot". Select your group from the dropdownn, name the bot, and provide an avatar url if desired.
 Log in to Heroku. In the dashboard, click new > create new app. After naming the app, go back to the GroupMe bot creation page and enter the callback url like this: https://[name of heroku app].herokuapp.com 
-Hit submit. Back in Heroku, click on the deploy tab and choose GitHub as the deployment method. Connect to a fork of this repository. At the bottom of the page, make sure Master is selected and click Deploy Branch. This step should be repeated if you make any code changes.
+Hit submit. Back in Heroku, click on the deploy tab and choose GitHub as the deployment method. Connect to a fork of this repository. On the settings tab, click Reveal Config Vars. Enter GROUPME_BOT_ID as the key, and your actual bot id as the value. (Found at https://dev.groupme.com/bots). In Heroku under the deploy tab, make sure Master is selected and click Deploy Branch. This step should be repeated if you make any code changes.
 
 
 
