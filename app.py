@@ -21,8 +21,6 @@ def msg_received_from_group():
   if data['sender_type'] == 'user':
 #     if data['text'] == "w-2" or "w2" or "w2 forms" or "w-2 forms" or "W2" or "W-2":
 #       send_msg("A form you receive from your employer before the end of January that includes necessary information to file your taxes, such as wages, tips earned, medicare taxes, etc.If you haven’t received your W-2 form from your employer by February 15th, ask your employer to send you your W-2 form, if they refuse, the IRS will then tell the employer to send the W-2 form within 10 days or face penalties. Be sure to provide the IRS an estimate of your income as well as dates worked and rate of pay. The IRS also allows an employee who cannot get the W-2 from his employer to send in the substitute Form 4852")
-     if "help" in data['text']:
-        send_msg("Hi, I am the Tax Teen chatbot. I can help you with your taxes. You can ask me questions relating to the IRS 1040EZ form. You can ask me about claims, joint returns, and much more. 
      if "w-2" in data['text']:
         send_msg("A form you receive from your employer before the end of January that includes necessary information to file your taxes, such as wages, tips earned, medicare taxes, etc.If you haven’t received your W-2 form from your employer by February 15th, ask your employer to send you your W-2 form, if they refuse, the IRS will then tell the employer to send the W-2 form within 10 days or face penalties. Be sure to provide the IRS an estimate of your income as well as dates worked and rate of pay. The IRS also allows an employee who cannot get the W-2 from his employer to send in the substitute Form 4852")
      if "w2" in data['text']:
@@ -31,8 +29,15 @@ def msg_received_from_group():
         send_msg("A form you receive from your employer before the end of January that includes necessary information to file your taxes, such as wages, tips earned, medicare taxes, etc.If you haven’t received your W-2 form from your employer by February 15th, ask your employer to send you your W-2 form, if they refuse, the IRS will then tell the employer to send the W-2 form within 10 days or face penalties. Be sure to provide the IRS an estimate of your income as well as dates worked and rate of pay. The IRS also allows an employee who cannot get the W-2 from his employer to send in the substitute Form 4852")
      if "W-2" in data['text']:
         send_msg("A form you receive from your employer before the end of January that includes necessary information to file your taxes, such as wages, tips earned, medicare taxes, etc.If you haven’t received your W-2 form from your employer by February 15th, ask your employer to send you your W-2 form, if they refuse, the IRS will then tell the employer to send the W-2 form within 10 days or face penalties. Be sure to provide the IRS an estimate of your income as well as dates worked and rate of pay. The IRS also allows an employee who cannot get the W-2 from his employer to send in the substitute Form 4852")
-     if "1099" in data['text']:
-      send_msg("1099 forms report the various types of income you may receive throughout the year other than the information provided by the w-2 form.") 
+     if "joint return" in data['text']:
+        send_msg(" A form that allows married couples to combine their tax liability and report their income, deductions, and credits on the same joint return")
+     if "claim" in data['text']:
+        send_msg("To claim someone or something, usually, on the tax return it is referred to claiming someone as a dependantWhen you claim someone as your dependent, it reduces the amount of your income subjected to taxYou can not claim someone as a dependent if someone already has claimed him as a dependent.")
+     if "Dependant / Dependent" in data['text']:
+        send_msg("Someone who relies on your income, such as children or relatives.You can NOT file a 1040EZ if you have dependents, must file a different type of tax formYou can claim yourself as a dependent if you meet the qualifications so no one else can claim you as a dependent, which is called a personal exemption.")
+     if "Federal income tax withheld" in data['text']:
+        send_msg("Found in Box 2 of your W-2 Form, it is a percentage of your income withheld from your employer to pay the government as tax. If too much is withheld, you are entitled to a tax refund, if too little, you will receive a bill or a penalty.To find out an estimate of your federal income tax withheld, use this website provided by the IRS https://apps.irs.gov/app/tax-withholding-estimator.")
+  
   return "ok", 200
 
  
