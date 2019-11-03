@@ -79,6 +79,10 @@ def msg_received_from_group():
         send_msg("US Tax return for seniors, in many ways similar to the Form 1040-EZ but much more simpler than the Form 1040.")
      elif "1040" in data['text'].lower():
         send_msg("The IRS Form 1040 is one of the official documents that U.S. taxpayers can use to file their annual income tax return. Depending on the type of income you report, it may be necessary to attach other forms or schedules to it, however, as a student you most likely won't have to worry about that.")
+     if "irs" in data['text'].lower():
+        send_msg("A great video to learn about the IRS: https://www.youtube.com/watch?v=Nn_Zln_4pA8")
+     if "internal revenue service" in data['text'].lower():
+        send_msg("A great video to learn about the IRS: https://www.youtube.com/watch?v=Nn_Zln_4pA8")
      if "help" in data['text'].lower(): 
         send_msg("Hi I am the Tax Teen chatbot. I can help you with your student taxes. You can ask me about w2 forms, joint claims, and much more. I would recomend you start with the 1040 IRS form. You can download it here: https://www.irs.gov/pub/irs-pdf/f1040.pdf. If you need help calculating your income tax type\"math\". Let me know if you have any questions.")
  
