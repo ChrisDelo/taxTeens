@@ -16,7 +16,7 @@ def msg_received_from_group():
   #Format the data we receive as a JSON
   data = request.get_json()
   log('{}'.format(data))
-  # hello there 
+  
   #Check the text of the message sent to the chat to see if it matches our command word
   if data['sender_type'] == 'user':
 #     if data['text'] == "w-2" or "w2" or "w2 forms" or "w-2 forms" or "W2" or "W-2":
@@ -45,9 +45,17 @@ def msg_received_from_group():
          send_msg("A form that reports the various types of income you may receive throughout the year other than the information provided by the w-2 form. The person or entity that pays you is responsible for filling out the appropriate 1099 tax form and sending it to you by January 31.")
      if "Earned income credit  EIC  EITC" in data['text']:
         send_msg("The Federal earned income credit is a refundable tax credit for low- to moderate-income working individuals and couples, particularly those with children.")
-     if "Routing number  RTN routing transit number  ABA routing number" in data['text']:
+     if "routing transit number " in data['text']:
         send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
-     if "PTIN  Preparer Tax Identification Number" in data['text']:
+     if "RTN" in data['text']:
+        send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
+     if "ABA routing number" in data['text']:
+        send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
+     if "Routing number" in data['text']:
+        send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
+     if  "  Preparer Tax Identification Number" in data['text']:
+        send_msg("The Preparer Tax Identification Number (PTIN) is an identification number that all paid tax return preparers must use on U.S. federal tax returns or claims for refund submitted to the Internal Revenue Service (IRS)")
+     if "PTIN" in data['text']:
         send_msg("The Preparer Tax Identification Number (PTIN) is an identification number that all paid tax return preparers must use on U.S. federal tax returns or claims for refund submitted to the Internal Revenue Service (IRS)")
      if "help" in data['text'].lower(): 
         send_msg("Hi I am the Tax Teen chatbot. I can help you with your student taxes. You can ask me about w2 forms, joint claims, and much more. I would recomend you start with the 1040EZ IRS form. You can download it here: https://www.irs.gov/pub/irs-prior/f1040ez--2017.pdf. Let me know if you have any questions.")
