@@ -49,11 +49,11 @@ def msg_received_from_group():
      elif "eitc" in data['text'].lower():
         send_msg("The Federal earned income credit is a refundable tax credit for low- to moderate-income working individuals and couples, particularly those with children.")
      if "routing transit number" in data['text'].lower():
-        send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found on your cheque or through your bank's website.")
+        send_msg("Your routing number identifies the location where your bank account was opened.The routing number for your bank can be found on your cheque or through your bank's website.")
      elif "rtn" in data['text'].lower():
-        send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found on your cheque or through your bank's website.")
+        send_msg("Your routing number identifies the location where your bank account was opened.The routing number for your bank can be found on your cheque or through your bank's website.")
      elif "routing number" in data['text'].lower():
-        send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found on your cheque or through your bank's website.")
+        send_msg("Your routing number identifies the location where your bank account was opened.The routing number for your bank can be found on your cheque or through your bank's website.")
      if "cool dude" in data['text'].lower():
         send_msg("https://www.youtube.com/watch?v=I7Tps0M-l64")
      if  "preparer tax identification number" in data['text'].lower():
@@ -85,7 +85,7 @@ def msg_received_from_group():
      if "internal revenue service" in data['text'].lower():
         send_msg("A great video to learn about the IRS: https://www.youtube.com/watch?v=Nn_Zln_4pA8")
      if "nontaxable combat pay election" in data['text'].lower():
-        send_msg("Nontaxable combat pay electiona are when those who served in the military and received combat pay (which is nontaxable) may elect to classify their pay as “earned income” for purposes of the EIC.")
+        send_msg("Nontaxable combat pay electiona are when those who served in the military who received combat pay (which is nontaxable) may elect to classify their pay as “earned income” for purposes of the EIC.")
      if "deadline" in data['text'].lower():
         send_msg("You must file your taxes by April 15th")
      elif "due date" in data['text'].lower():
