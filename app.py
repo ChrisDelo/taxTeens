@@ -63,6 +63,8 @@ def msg_received_from_group():
         send_msg("The Preparer Tax Identification Number (PTIN) is an identification number that all paid tax return preparers must use on U.S. federal tax returns or claims for refund submitted to the Internal Revenue Service (IRS)")
      if "file tax" in data['text'].lower():
         send_msg_pic("You are required to file taxes if your gross income is more than 12,000. However, if your adjusted gross income is under 66,000 you can file your taxes for free using freefile.", "https://cdn.discordapp.com/attachments/512727198570905604/640420453797593138/unknown.png")
+     elif "When" in data['text'].lower():
+        send_msg_pic("You will need to file form 1040 by April 15 (super important)")
      if "help" in data['text'].lower(): 
         send_msg("Hi I am the Tax Teen chatbot. I can help you with your student taxes. You can ask me about w2 forms, joint claims, and much more. I would recomend you start with the 1040 IRS form. You can download it here: https://www.irs.gov/pub/irs-pdf/f1040.pdf. If you need help calculating your income tax type\"math\". Let me know if you have any questions.")
   
