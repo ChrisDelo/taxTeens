@@ -112,7 +112,7 @@ def msg_received_from_group():
         send_msg("Thanks for using the math function of Tax Teen. Tax Teen can help you file your basic taxes. Please enter your total income and interest on student loans. The format is: \"math: income: <your income>\" Then send:\"math: interest: <your student loan interest>\"")
      if "math: income:" in data['text'].lower():
         income = int(data['text'][13:])
-        send_msg("Please send your student loan interest. The format: \"math: interest: <your student loan interest>\"")
+        send_msg("You entered: " + income + " for your income.Please send your student loan interest. The format: \"math: interest: <your student loan interest>\"")
      if "math: interest:" in data['text'].lower():
         interest = int(data['text'][15:])
         output = income - interest
