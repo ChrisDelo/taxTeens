@@ -10,7 +10,7 @@ It's complicated.
 
 Type your message in GroupMe and the bot will respond to certain terms.
 
-###Some terms:
+## Some terms:
 taxes
 W-2
 1099
