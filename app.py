@@ -29,7 +29,7 @@ def msg_received_from_group():
      if "joint return" in data['text'].lower():
         send_msg(" A form that allows married couples to combine their tax liability and report their income, deductions, and credits on the same joint return")
      if "claim" in data['text'].lower():
-        send_msg("To claim someone or something, usually, on the tax return it is referred to claiming someone as a dependant. When you claim someone as your dependent, it reduces the amount of your income subjected to taxYou can not claim someone as a dependent if someone already has claimed him as a dependent.")
+        send_msg("To claim someone or something, usually, on the tax return it is referred to claiming someone as a dependant. When you claim someone as your dependent, it reduces the amount of your income subjected to tax. You can not claim someone as a dependent if someone already has claimed him as a dependent.")
      if "dependant" in data['text'].lower():
         send_msg("Someone who relies on your income, such as children or relatives. You can claim yourself as a dependent if you meet the qualifications so no one else can claim you as a dependent, which is called a personal exemption.")
      elif "dependent" in data['text'].lower():
