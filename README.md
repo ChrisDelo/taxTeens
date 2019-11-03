@@ -11,22 +11,22 @@ It's complicated.
 Type your message in GroupMe and the bot will respond to certain terms.
 
 ## Some terms:
-taxes
-W-2
-1099
-taxable interest
-unemployment compensation
-joint return
-claim
-dependent
-federal income tax withheld
-earned income tax credit (EITC)
-routing number
-preparer tax identification number (PTIN)
-IRS
-gross income
-adjusted income
-when to file
+taxes  
+W-2  
+1099  
+taxable interest  
+unemployment compensation  
+joint return  
+claim  
+dependent  
+federal income tax withheld  
+earned income tax credit (EITC)  
+routing number  
+preparer tax identification number (PTIN)  
+IRS  
+gross income  
+adjusted income  
+when to file  
 
 
 
