@@ -16,7 +16,7 @@ def msg_received_from_group():
   #Format the data we receive as a JSON
   data = request.get_json()
   log('{}'.format(data))
-  
+  # hello there 
   #Check the text of the message sent to the chat to see if it matches our command word
   if data['sender_type'] == 'user':
 #     if data['text'] == "w-2" or "w2" or "w2 forms" or "w-2 forms" or "W2" or "W-2":
