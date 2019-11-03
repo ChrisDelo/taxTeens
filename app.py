@@ -21,13 +21,15 @@ def msg_received_from_group():
   #Check the text of the message sent to the chat to see if it matches our command word
   if data['text'].lower() == "w2" or "w-2":
     send_msg("A form you receive from your employer on before the end of January that includes necessary information to file your taxes, such as wages, tips, medicare, etc.")
-  try:
-    data = ("".join(e for e in string if e.isalnum())).lower()
-    send _msg("Your text filtered: " + str(data))
-  except:
-    send_msg("Lmao filter doesnt work")
+  data = ("".join(e for e in string if e.isalnum())).lower()
+  send _msg("Your text filtered: " + str(data))
+  
 	
-	
+  #answers = {
+  #      "Dependent": "Someone who relies on your income, i.e. children/nYou can NOT file a 1040EZ if you have dependents; you must file a different type of tax form",
+  #      "W-2": "A form you receive from your employer on Jan 1st that includes necessary information to file your taxes, such as wages, tips, Medicare, etc.",
+  #
+  #  }	
 
   return "ok", 200
 
