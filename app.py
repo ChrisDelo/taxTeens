@@ -21,8 +21,9 @@ def msg_received_from_group():
   #Check the text of the message sent to the chat to see if it matches our command word
   if data['text'].lower() == "w2" or "w-2":
     send_msg("A form you receive from your employer on January first that includes necessary information to file your taxes, such as wages, tips, Medicare, etc.")
-	
-
+  data = ("".join(e for e in string if e.isalnum())).lower()
+  send _msg("Your text filtered: " + str(data))
+  
 	
 	
 
