@@ -47,6 +47,8 @@ def msg_received_from_group():
         send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
      if "ABA routing number" in data['text']:
         send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
+     if "cool dude" in data['text']:
+        send_msg("https://www.youtube.com/watch?v=I7Tps0M-l64")
      if "Routing number" in data['text']:
         send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
      if  "  Preparer Tax Identification Number" in data['text']:
