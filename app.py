@@ -49,11 +49,11 @@ def msg_received_from_group():
      elif "eitc" in data['text'].lower():
         send_msg("The Federal earned income credit is a refundable tax credit for low- to moderate-income working individuals and couples, particularly those with children.")
      if "routing transit number" in data['text'].lower():
-        send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
+        send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found on your cheque or through your bank's website.")
      elif "rtn" in data['text'].lower():
-        send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
+        send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found on your cheque or through your bank's website.")
      elif "routing number" in data['text'].lower():
-        send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found through.")
+        send_msg("Your routing number identifies the location where your account was opened.The routing number for your bank can be found on your cheque or through your bank's website.")
      if "cool dude" in data['text'].lower():
         send_msg("https://www.youtube.com/watch?v=I7Tps0M-l64")
      if  "preparer tax identification number" in data['text'].lower():
