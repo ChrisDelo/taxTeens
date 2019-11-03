@@ -16,7 +16,9 @@ def msg_received_from_group():
   #Format the data we receive as a JSON
   data = request.get_json()
   log('{}'.format(data))
-  
+  income = 0
+  interest = 0
+  x = 0
   #Check the text of the message sent to the chat to see if it matches our command word
   if data['sender_type'] == 'user':
 #     if data['text'] == "w-2" or "w2" or "w2 forms" or "w-2 forms" or "W2" or "W-2":
@@ -108,7 +110,16 @@ def msg_received_from_group():
      if "help" in data['text'].lower(): 
         send_msg("Hi I am the Tax Teen chatbot. I can help you with your student taxes. You can ask me about w2 forms, joint claims, and much more. I would recomend you start with the 1040 IRS form. You can download it here: https://www.irs.gov/pub/irs-pdf/f1040.pdf. Be sure to check out https://www.irs.gov/individuals/students for any student-specific tax information. If you need help calculating your income tax type \"math\". Let me know if you have any questions.")
      if data['text'].lower() == "math":
-        send_msg("Thanks for using the math function of Tax Teen. Tax Teen can help you file your basic taxes. Please enter your total income and interest on student loans. The format is: \"math: income: <your income>, interest: <your student loan interest>\"")
+        send_msg("Thanks for using the math function of Tax Teen. Tax Teen can help you file your basic taxes. Please enter your total income and interest on student loans. The format is: \"math: income: <your income>\" Then send:\"math: interest: <your student loan interest>\"")
+     if "math: income:" in data['text'].lower():
+        income = int(data['text'][13:])
+        x = x + 1
+     if "math: interest:" in data['text'].lower():
+        interest = int(data['text'][15:])
+        x = x + 1
+     if(x == 2):
+        output = income - interest
+        send_msg("You should pay: $" + output + "in federal taxes")
   
   
   
