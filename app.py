@@ -107,7 +107,7 @@ def msg_received_from_group():
         send_msg("To find out how to file your taxes, go to https://www.irs.gov/filing. You can either send your tax return online or through the mail.")
      if "help" in data['text'].lower(): 
         send_msg("Hi I am the Tax Teen chatbot. I can help you with your student taxes. You can ask me about w2 forms, joint claims, and much more. I would recomend you start with the 1040 IRS form. You can download it here: https://www.irs.gov/pub/irs-pdf/f1040.pdf. Be sure to check out https://www.irs.gov/individuals/students for any student-specific tax information. If you need help calculating your income tax type \"math\". Let me know if you have any questions.")
-      if data['text'].lower() == "math":
+     if data['text'].lower() == "math":
         send_msg("Thanks for using the math function of Tax Teen. Tax Teen can help you file your basic taxes. Please enter your total income and interest on student loans. The format is: \"math: income: <your income>, interest: <your student loan interest>\"")
   
   
