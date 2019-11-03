@@ -29,7 +29,9 @@ def msg_received_from_group():
         send_msg(" A form that allows married couples to combine their tax liability and report their income, deductions, and credits on the same joint return")
      if "claim" in data['text']:
         send_msg("To claim someone or something, usually, on the tax return it is referred to claiming someone as a dependantWhen you claim someone as your dependent, it reduces the amount of your income subjected to taxYou can not claim someone as a dependent if someone already has claimed him as a dependent.")
-     if "Dependant / Dependent" in data['text']:
+     if "Dependant" in data['text']:
+        send_msg("Someone who relies on your income, such as children or relatives.You can NOT file a 1040EZ if you have dependents, must file a different type of tax formYou can claim yourself as a dependent if you meet the qualifications so no one else can claim you as a dependent, which is called a personal exemption.")
+     if "Dependent" in data['text']:
         send_msg("Someone who relies on your income, such as children or relatives.You can NOT file a 1040EZ if you have dependents, must file a different type of tax formYou can claim yourself as a dependent if you meet the qualifications so no one else can claim you as a dependent, which is called a personal exemption.")
      if "tax withheld" in data['text']:
         send_msg("Found in Box 2 of your W-2 Form, it is a percentage of your income withheld from your employer to pay the government as tax. If too much is withheld, you are entitled to a tax refund, if too little, you will receive a bill or a penalty.To find out an estimate of your federal income tax withheld, use this website provided by the IRS https://apps.irs.gov/app/tax-withholding-estimator.")
