@@ -22,8 +22,7 @@ def msg_received_from_group():
   if data['text'].lower() == "!test":
     send_msg("Hello World!")
 	
-if data['text'].lower() == "thick":
-	send_msg("THICC")
+
 
 
 
