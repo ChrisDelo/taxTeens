@@ -18,7 +18,6 @@ def msg_received_from_group():
   log('{}'.format(data))
   income = 0
   interest = 0
-  x = 0
   #Check the text of the message sent to the chat to see if it matches our command word
   if data['sender_type'] == 'user':
 #     if data['text'] == "w-2" or "w2" or "w2 forms" or "w-2 forms" or "W2" or "W-2":
@@ -113,11 +112,9 @@ def msg_received_from_group():
         send_msg("Thanks for using the math function of Tax Teen. Tax Teen can help you file your basic taxes. Please enter your total income and interest on student loans. The format is: \"math: income: <your income>\" Then send:\"math: interest: <your student loan interest>\"")
      if "math: income:" in data['text'].lower():
         income = int(data['text'][13:])
-        x = x + 1
+        send_msg("Please send your student loan interest. The format: \"math: interest: <your student loan interest>\"")
      if "math: interest:" in data['text'].lower():
         interest = int(data['text'][15:])
-        x = x + 1
-     if(x == 2):
         output = income - interest
         send_msg("You should pay: $" + output + "in federal taxes")
   
