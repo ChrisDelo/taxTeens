@@ -107,13 +107,15 @@ def msg_received_from_group():
      if "how to file" in data['text'].lower():
         send_msg("To find out how to file your taxes, go to https://www.irs.gov/filing. You can either send your tax return online or through the mail.")
      if "help" in data['text'].lower(): 
-        send_msg("Hi I am the Tax Teen chatbot. I can help you with your student taxes. You can ask me about w2 forms, joint claims, and much more. I would recomend you start with the 1040 IRS form. You can download it here: https://www.irs.gov/pub/irs-pdf/f1040.pdf. Be sure to check out https://www.irs.gov/individuals/students for any student-specific tax information. Let me know if you have any questions.")
+        send_msg("Hi I am the Tax Teen chatbot. I can help you with your student taxes. You can ask me about w2 forms, joint claims, and much more. I would recomend you start with the 1040 IRS form. You can download it here: https://www.irs.gov/pub/irs-pdf/f1040.pdf. Be sure to check out https://www.irs.gov/individuals/students for any student-specific tax information. Enter \"keyword\" if you don't know what to ask.")
      if "1098-e" in data['text']:
         send_msg("The 1098-E Statement form is for individuals who receive student loan interest of $600 or more from an individual during the year in the course of your trade or business, it would be used to help calculate box 1 of the 1040 Form. You must then attach Schedule 1 to your 1040 Form.")
      elif "1098e" in data['text']:
         send_msg("The 1098-E Statement form is for individuals who receive student loan interest of $600 or more from an individual during the year in the course of your trade or business, it would be used to help calculate box 1 of the 1040 Form. You must then attach Schedule 1 to your 1040 Form.")
      elif "1098 e" in data['text']:
         send_msg("The 1098-E Statement form is for individuals who receive student loan interest of $600 or more from an individual during the year in the course of your trade or business, it would be used to help calculate box 1 of the 1040 Form. You must then attach Schedule 1 to your 1040 Form.")
+     elif "keyword" in data['text']:
+        send_msg("List of keywords: w2, joint return, claim, dependent, tax withheld, unemployment compensation, taxable interest, 1099, earned income credit, routing transit number, PTIN, 1040-A, 1040-EZ, 1040-SR, 1040, IRS, nontaxable combat elect pay, deadline, gross income, permanent fund, how to file")
 #      if data['text'].lower() == "math":
 #         send_msg("Thanks for using the math function of Tax Teen. Tax Teen can help you file your basic taxes. Please enter your total income and interest on student loans. The format is: \"math: income: <your income>\" Then send:\"math: interest: <your student loan interest>\"")
 #      if "math: income:" in data['text'].lower():
